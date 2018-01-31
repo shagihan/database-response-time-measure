@@ -53,7 +53,7 @@ public class DbReasponceMeasure {
         Statement statement = null;
         ResultSet tempResultset;
         long startTime = 0;
-        long compleatedTime = 0;
+        long completedTime = 0;
         long totalTime = 0;
         if (querytorun == null) {
             querytorun = Constents.DEFAULT_QUERY_TO_EXECUTE;
@@ -61,6 +61,7 @@ public class DbReasponceMeasure {
         if (configs.getProperty("SQL.ITERATIONS") != null) {
             iternations = Integer.parseInt(configs.getProperty("SQL.ITERATIONS"));
         }
+
         for (int index = 0; index < iternations; index++) {
             try {
                 startTime = System.currentTimeMillis();
@@ -70,9 +71,9 @@ public class DbReasponceMeasure {
                     System.out.println("Query Executed");
                 }
                 statement.close();
-                compleatedTime = System.currentTimeMillis();
-                totalTime += (compleatedTime - startTime);
-                System.out.println("Time taken to execute query : " + (compleatedTime - startTime) + "ms.");
+                completedTime = System.currentTimeMillis();
+                totalTime += (completedTime - startTime);
+                System.out.println("Time taken to execute query : " + (completedTime - startTime) + "ms.");
             } catch (SQLException e) {
                 System.out.println("Unable to execute query.");
                 e.printStackTrace();
