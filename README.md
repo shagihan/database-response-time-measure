@@ -16,8 +16,6 @@ You need to have idea on the issue that you are going to isolate and define the 
 eg: Token generation, Registry, JDBC user store issues need to pick the query as relevant for each.
 
 
-############################################
-
 How to build ?
 ---------------
 1. Checkout the source and execute following command from the project home folder (database-response-time-measure)
@@ -36,21 +34,21 @@ location.
 3. Execute following command to run the client and get query execution times.
 java -jar db.response.time.measure-1.0.jar
 
-4. On a successful execution of client, you will see result similar to follows.
+4. On a successful execution of client, you will see result similar to following.
 -----------------------------------------------------------------------------------------------------------------
                               Connected to database and query execution started
 -----------------------------------------------------------------------------------------------------------------
 
-Query Executed
-Time taken to execute query : 38ms.
-Query Executed
-Time taken to execute query : 98ms.
-Query Executed
-Time taken to execute query : 98ms.
-Query Executed
-Time taken to execute query : 42ms.
-Query Executed
-Time taken to execute query : 38ms.
+Query Executed<br />
+Time taken to execute query : 38ms.<br />
+Query Executed<br />
+Time taken to execute query : 98ms.<br />
+Query Executed<br />
+Time taken to execute query : 98ms.<br />
+Query Executed<br />
+Time taken to execute query : 42ms.<br />
+Query Executed<br />
+Time taken to execute query : 38ms.<br />
 
 -----------------------------------------------------------------------------------------------------------------
                        Avarage time taken to execute query : 62.8ms.
