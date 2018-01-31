@@ -31,10 +31,10 @@ public class ReadConfigFile {
      * Read config.file.
      */
     public ReadConfigFile() {
-        try (InputStream input = new FileInputStream("resources/config.properties")) {
+        try (InputStream input = new FileInputStream("config.properties")) {
             properties.load(input);
         } catch (IOException e) {
-            System.out.println("Can't find/read 'resources/config.properties' file.");
+            System.out.println("Can't find/read 'config.properties' file.");
             e.printStackTrace();
         }
     }
