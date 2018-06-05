@@ -31,8 +31,8 @@ location.
 
 2. Update the config.properties file with correct db details.
 
-3. Execute following command to run the client and get query execution times.
-java -jar db.response.time.measure-1.0.jar  
+3. Execute following command to run the client and get query execution times. <br />
+java -jar db.response.time.measure-1.0.jar<br />
 
 4. On a successful execution of client, you will see result similar to following.
 -----------------------------------------------------------------------------------------------------------------
